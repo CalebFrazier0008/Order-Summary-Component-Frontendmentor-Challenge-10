@@ -1,0 +1,157 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Red Hat Display", sans-serif;
+}
+p {
+  font-size: 16px;
+}
+.Container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(225, 100%, 94%);
+}
+.Card {
+  width: 300px;
+  height: 520px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.Top {
+  height: 33%;
+  width: 100%;
+}
+.Image {
+  height: 100%;
+  width: 100%;
+}
+.Middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  height: 250px;
+}
+.Middle > h2 {
+  color: hsl(223, 47%, 23%);
+}
+.Middle > p {
+  margin-top: 15px;
+  color: hsl(224, 23%, 55%);
+}
+.Plan {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 24% 7em 20%;
+  width: 100%;
+  height: 70%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  justify-content: space-between;
+  grid-template-areas: "Mi Pa Ch";
+  padding-right: 20px;
+  padding-left: 10px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+.Plan > p {
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 14px;
+}
+.Music {
+  grid-area: Mi;
+  text-align: right;
+  justify-self: end;
+}
+.Cost {
+  grid-area: Pa;
+  width: 100px;
+  text-align: left;
+  font-size: 18px;
+}
+.Cost > p {
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  font-size: 14px;
+  text-align: left;
+}
+.Cost > h5 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.Change {
+  grid-area: Ch;
+  color: hsl(245, 75%, 52%);
+  transition: opacity 0.3s;
+}
+.Bottom {
+  width: 100%;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.Buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 14px;
+  /* box-shadow: hsl(224, 23%, 55%) 1px 2px 15px 1px; */
+  transition: opacity 0.3s;
+}
+.Buttons > h5 {
+  color: hsl(224, 23%, 55%);
+  transition: color 0.3s;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+.Buttons > h5:hover {
+  color: black;
+  cursor: pointer;
+}
+.Change:hover {
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 50%;
+}
+@media only screen and (min-width: 1200px) {
+  .Card {
+    width: 400px;
+    height: 520px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+}
